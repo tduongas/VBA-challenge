@@ -107,7 +107,7 @@ Sub Stock_Analyzer_Part_1()
                         yearlyChange = yearlyClosingPrice - yearlyOpeningPrice
                          
                         ' Cater for division by 0
-                        If yearlyOpeningPrice = 0 And yearlyChange = 0 Then
+                        If yearlyOpeningPrice = 0 Then
                             yearlyPercentageChange = 0
                         Else
                             ' Calculate yearly percentage change
